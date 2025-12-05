@@ -43,9 +43,19 @@
 #         cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }}
 
 name: 'Terraform'
-
 on:
   workflow_dispatch:
+    inputs:
+      resource_type:
+        description: "Type of resource to deploy"
+        required: true
+        type: string
+      tf_vars:
+        description: "Terraform variables JSON"
+        required: true
+        type: string
+
+
     
   push:
     branches:
