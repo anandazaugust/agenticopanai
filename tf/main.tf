@@ -4,7 +4,7 @@ resource "azurerm_resource_group" "example" {
   location = "uk south"
 }
 
-resource "azurerm_resource_group" "example" {
+resource "azurerm_resource_group" "examttple" {
   name     = var.rgname
   location = uksouth
 }
