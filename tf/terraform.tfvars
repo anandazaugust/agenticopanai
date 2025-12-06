@@ -1,2 +1,2 @@
-name=agenttriggeredrg
+rgname=agenttriggeredrg
 location=uksouth
