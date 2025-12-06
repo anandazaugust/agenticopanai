@@ -1,2 +1,2 @@
-rgname="test-vnet"
-location="eastus"
+name=agenttriggeredrg
+location=uksouth
