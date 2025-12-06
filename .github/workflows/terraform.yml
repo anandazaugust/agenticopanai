@@ -110,7 +110,7 @@ jobs:
         printf "%b" "${{ github.event.inputs.tf_vars }}\n" > tf/terraform.tfvars
 
         git add tf/terraform.tfvars
-        git commit -m "Update tfvars for ${{ github.event.inputs.resource_type }}"
+        git commit -m "Update tfvars for ${{ github.event.inputs.resource_type }}" || echo "No changes to commit"
         git push
 
 
