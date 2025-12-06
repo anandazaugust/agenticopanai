@@ -1,1 +1,2 @@
-name="test-vnet"\nlocation="eastus"
+name="test-vnet"
+location="eastus"
