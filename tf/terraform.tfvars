@@ -1,2 +1,2 @@
-rgname=agenttriggeredrg
-location=uksouth
+rgname="agenttriggeredrg"
+location="uksouth"
