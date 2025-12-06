@@ -1,2 +1,2 @@
-name="test-vnet"
+rgname="test-vnet"
 location="eastus"
