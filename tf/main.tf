@@ -6,5 +6,5 @@ resource "azurerm_resource_group" "example" {
 
 resource "azurerm_resource_group" "examttple" {
   name     = var.rgname
-  location = uksouth
+  location = "uksouth"
 }
