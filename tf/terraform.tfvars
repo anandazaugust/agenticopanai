@@ -1,2 +1,2 @@
-rgname=agenttriggeredrg
-location=uksouth
+rgname="aicreated"
+location="uksouth"
