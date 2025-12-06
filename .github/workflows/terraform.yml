@@ -106,10 +106,13 @@ jobs:
       run: |
         git config --global user.name "github-actions"
         git config --global user.email "actions@github.com"
-        echo "${{ github.event.inputs.tf_vars }}" > infrastructure/${{ github.event.inputs.resource_type }}/terraform.tfvars
-        git add infrastructure/${{ github.event.inputs.resource_type }}/terraform.tfvars
+
+        echo "${{ github.event.inputs.tf_vars }}" > tf/terraform.tfvars
+
+        git add tf/terraform.tfvars
         git commit -m "Update tfvars for ${{ github.event.inputs.resource_type }}"
         git push
+
 
 
 
