@@ -1,2 +1,0 @@
-rgname="aicreated"
-location="uksouth"
