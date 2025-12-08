@@ -5,4 +5,5 @@ resource_groups = {
   rg2 = { location = "uksouth" }
   rg3 = { location = "uksouth" }
   rg1 = { location = "uksouth" }
+  rg5_central_india = { location = "centralindia" }
 }
