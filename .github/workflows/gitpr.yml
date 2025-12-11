@@ -7,7 +7,7 @@ on:
         description: "Path to file to update"
         required: true
         type: string
-      updated_content:
+      new_block:
         description: "Full updated file content"
         required: true
         type: string
@@ -42,7 +42,7 @@ jobs:
 
       - name: Update Terraform file
         run: |
-          echo "${{ github.event.inputs.updated_content }}" > ${{ github.event.inputs.file_path }}
+          echo "${{ github.event.inputs.new_block }}" > ${{ github.event.inputs.file_path }}
 
       - name: Commit changes
         run: |
