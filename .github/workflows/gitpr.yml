@@ -42,6 +42,7 @@ jobs:
 
       - name: Update Terraform file
         run: |
+          echo "" >> "${{ github.event.inputs.file_path }}"
           echo "${{ github.event.inputs.new_block }}" > ${{ github.event.inputs.file_path }}
 
       - name: Commit changes
