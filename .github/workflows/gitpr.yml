@@ -32,6 +32,9 @@ jobs:
         run: |
           git config user.name "azure-ai-agent"
           git config user.email "agent@github.com"
+      - name: Pull latest main
+        run: |
+          git pull origin main
 
       - name: Create a new branch
         run: |
