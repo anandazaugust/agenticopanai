@@ -40,10 +40,11 @@ jobs:
         run: |
           git checkout -b "${{ github.event.inputs.branch_name }}"
 
-      - name: Update Terraform file
+ 
+      - name: Append Terraform block safely
         run: |
           echo "" >> "${{ github.event.inputs.file_path }}"
-          echo "${{ github.event.inputs.new_block }}" > ${{ github.event.inputs.file_path }}
+          echo "${{ github.event.inputs.new_block }}" >> "${{ github.event.inputs.file_path }}"
 
       - name: Commit changes
         run: |
